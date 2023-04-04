@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rikigg</title>
+</head>
+<body>
+	<h1>rikigg</h1>
+	<script>
+		// отправляем кастомный заголовок X-Author
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '/', true);
+		xhr.setRequestHeader('X-Author', 'rikigg');
+		xhr.send();
+
+		// устанавливаем заголовок Access-Control-Allow-Origin
+		document.header('Access-Control-Allow-Origin', '*');
+	</script>
+</body>
+</html>
